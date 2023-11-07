@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gunner FPS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="gunner-favicon.ico" type="image/x-icon">
+
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: 'Roboto', Arial, sans-serif;
+            text-align: center;
+        }
+
+        .project-name {
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .video-container {
+            margin-top: 20px;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+        }
+
+        .project-description {
+            font-size: 16px;
+            text-align: center; /* Center-align the project description */
+            margin: 20px auto; /* Center the description box and decrease its width */
+            max-width: 1000px;
+        }
+
+        .repository-button {
+            position: fixed;
+            bottom: 20px; /* Set the bottom position with margin */
+            left: 50%; /* Set to center horizontally */
+            transform: translateX(-50%); /* Center horizontally */
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border: none;
+        }
+
+        .home-button {
+            position: fixed;
+            top: 20px;
+            left: 20px; /* Add left margin to the Home button */
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="home.html" class="home-button">Home</a>
+    <div class="project-name">Gunner FPS</div>
+    <div class="project-description">
+        <!-- <div style="font-weight: bold;">[ In Progress ]<br></div> -->
+        A First-Person-Shooter (FPS) game.
+    </div>
+
+    <div class="video-container">
+        <!-- Replace the src attribute with your YouTube video link -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/your_youtube_video_id" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="project-description">
+        <!-- Add your project description here -->
+        <div style="font-weight: bold; font-size: 20px;">Key Points</div>
+        <br>
+        Gunner is a First Person Shooter game based on the training range mode of the famous FPS game called VALORANT. It is implementing some basic features of that game.
+        <br><br>
+        It has 6 different weapons such as assault rifles, sniper rifles, and Glock. The player can choose from these options via a "Buy" Menu and then can proceed to play any mode he wishes using the selected weapon.
+        <br><br>
+        The weapon models are from the Unity Asset Store but the Player Controller, Gun Behaviour, and Animations are developed in-house. 
+        <br><br>
+        The Game also features training modes such as target training, Free Bot Shoot training, and Timed Bot Shoot training. All derived from the "Range" mode of VALORANT.
+        <br><br>
+        The First-person camera controller is made in-house. The player movement is derived from the Character Controller component by Unity Engine. It is also used to implement more features such as Jump.
+        <br><br>
+        <div style="font-style: italic; font-weight: lighter;">more details on the components and working can be provided upon request.</div>
+    </div>
+    <br>
+    <a href="https://github.com/your_repository_link" class="repository-button" target="_blank">Repository Link</a>
+    <br>
+    <br>
+    <br>
+</body>
+</html>

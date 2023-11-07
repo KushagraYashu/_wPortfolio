@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Switch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="color-switch-favicon.ico" type="image/x-icon">
+
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: 'Roboto', Arial, sans-serif;
+            text-align: center;
+        }
+
+        .project-name {
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .video-container {
+            margin-top: 20px;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+        }
+
+        .project-description {
+            font-size: 16px;
+            text-align: center; /* Center-align the project description */
+            margin: 20px auto; /* Center the description box and decrease its width */
+            max-width: 1000px;
+        }
+
+        .repository-button {
+            position: fixed;
+            bottom: 20px; /* Set the bottom position with margin */
+            left: 50%; /* Set to center horizontally */
+            transform: translateX(-50%); /* Center horizontally */
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border: none;
+        }
+
+        .home-button {
+            position: fixed;
+            top: 20px;
+            left: 20px; /* Add left margin to the Home button */
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="home.html" class="home-button">Home</a>
+    <div class="project-name">Color Switch</div>
+    <div class="project-description">
+        <!-- <div style="font-weight: bold;">[ In Progress ]<br></div> -->
+        Recreation of a famous Android Game.
+    </div>
+
+    <div class="video-container">
+        <!-- Replace the src attribute with your YouTube video link -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/your_youtube_video_id" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="project-description">
+        <!-- Add your project description here -->
+        <div style="font-weight: bold; font-size: 20px;">Key Points</div>
+        <br>
+        Color Switch is a clone game of "Color Switch" for Android and iOS, which is available on <a href="https://play.google.com/store/apps/details?id=com.colorswitch.switch2" style="color: blue;" target="_blank">Play Store</a> and <a href="https://apps.apple.com/in/app/color-switch/id1314725881" style="color: blue;" target="_blank">App Store</a>. I tried to replicate the same for a Windows based device.
+
+        <br><br>
+        It features a randomly colored player and the player has to go through multiple colored obstacles in order to reach the Finish Line.
+        <br><br>
+        The obstacles are divided into 4 differently colored panels, with one colour being the same as the player's. The player can only cross through the same colored panel or else he will die.
+        <br><br>
+        The obstacles continuously move and rotate to make the level more challenging for the player.
+        <br><br>
+        The player camera is a Freelook Cinemachine camera with focus and follow on the vehicle with the functionality of returning back to its initial position or heading.
+        <br><br>
+        <div style="font-style: italic; font-weight: lighter;">more details on the components and working can be provided upon request.</div>
+    </div>
+    <br>
+    <a href="https://github.com/your_repository_link" class="repository-button" target="_blank">Repository Link</a>
+    <br>
+    <br>
+    <br>
+</body>
+</html>

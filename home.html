@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kushagra Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="keyboard-favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: 'Roboto', Arial, sans-serif;
+            text-align: center;
+        }
+
+        .header {
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .intro {
+            font-size: 16px;
+        }
+
+        .subtitle {
+            font-size: 32px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr); /* 2 rows and 3 columns */
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .project {
+            text-align: center;
+        }
+
+        .project img {
+            width: 100%;
+            max-width: 300px;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+
+        .project-title {
+            font-weight: bold;
+        }
+
+        .project-description {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .unity-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-decoration: none;
+            
+        }
+
+        .unity-button img {
+            vertical-align: middle;
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://kushagrayashu.github.io/_portfolio/" class="unity-button" target="_blank">
+        <img src="unity-logo.png" alt="Unity Logo"> Unity Based Portfolio
+    </a>
+    <div class="header">Kushagra</div>
+    <div class="title">Game Developer</div><br>
+    <div class="intro">Undergrad student with a penchant for Video Games Designing and Development</div>
+    <br>
+    <div class="subtitle">Click on Project Name or photograph to view the projects</div>
+    
+    <div class="project-grid">
+        <div class="project">
+            <a href="revv.html">
+                <img src="revv.jpg" alt="REVV">
+                <div class="project-title">REVV Car Simulation</div>
+            </a>
+            <div class="project-description">It is a car simulation game containing 5 cars such as sports car, hatchbacks, sedans, and offroaders, on different types of tracks such as a race track or an offroad course.</div>
+        </div>
+
+        <div class="project">
+            <a href="gunner.html">
+                <img src="gunner.jpg" alt="gunner">
+                <div class="project-title">Gunner FPS</div>
+                
+            </a>
+            <div class="project-description">It is first person shooter game based on the training range of a famous FPS game called VALORANT, it includes multiple weapons and training modes.</div>
+        </div>
+
+        <div class="project">
+            <a href="colorSwitch.html">
+                <img src="colorSwitch.jpg" alt="colorSwitch">
+                <div class="project-title">Color Switch Clone</div>
+                
+            </a>
+            <div class="project-description">It is a clone of the popular color switch android game. It aims to provide a similar experience on a PC application.</div>
+        </div>
+
+        <div class="project">
+            <a href="pakdamPakdai.html">
+                <img src="pakdamPakdai.jpg" alt="pakdamPakdai">
+                <div class="project-title">Pakdam Pakdai</div>
+                
+            </a>
+            <div class="project-description">A Unity implementation of real world Chase & Tag. It supports multi-user input and split screen gameplay.</div>
+        </div>
+
+        <div class="project">
+            <a href="run.html">
+                <img src="run.jpg" alt="run">
+                <div class="project-title">Run</div>
+                
+            </a>
+            <div class="project-description">My First ever project in Unity, a simple runner based game with the objective of hitting target (500) points while avoiding collisions with enemies and their bullets.</div>
+        </div>
+
+        <!-- Add more project entries with images, titles, and descriptions here -->
+
+    </div>
+</body>
+</html>
