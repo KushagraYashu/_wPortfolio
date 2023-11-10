@@ -72,6 +72,8 @@
         }
 
         .unity-button {
+            transition: transform 0.3s;
+            border-radius: 5px;
             position: absolute;
             top: 10px;
             right: 10px;
@@ -83,15 +85,73 @@
             
         }
 
+        .unity-button:hover{
+            transform: scale(1.1); /* Add a scale effect on hover */
+            display: block; /* Show the video container on hover */
+        }
+
         .unity-button img {
             vertical-align: middle;
             width: 30px;
             height: 30px;
             margin-right: 10px;
         }
+
+        .buttons-container {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            z-index: 1000;
+        }
+
+        .button {
+            margin-bottom: 3px;
+            padding: 8px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s;
+        }
+
+        .button:hover{
+            transform: scale(1.1); /* Add a scale effect on hover */
+            display: block; /* Show the video container on hover */
+        }
+
+        .button img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
     </style>
 </head>
 <body>
+    <div class="buttons-container">
+        <a href="https://drive.google.com/file/d/1lKl6zkV8lk5YEouO3qFc1kaW1kvLWT-h/view?usp=sharing" target="_blank" class="button">
+            <img src="resume_icon.png" alt="Resume Icon">
+            Paper Resume
+        </a>
+        <a href="https://github.com/KushagraYashu" target="_blank" class="button">
+            <img src="github_icon.png" alt="GitHub Icon">
+            GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/kushagrabb" target="_blank" class="button">
+            <img src="linkedin_icon.png" alt="LinkedIn Icon">
+            LinkedIn
+        </a>
+        <a href="mailto:syashu31@gmail.com" target="_blank" class="button">
+            <img src="email_icon.png" alt="Email Icon">
+            E-mail
+        </a>
+    </div>
     <a href="https://kushagrayashu.github.io/_portfolio/" class="unity-button" target="_blank">
         <img src="unity-logo.png" alt="Unity Logo"> Unity Based Portfolio
     </a>
