@@ -47,7 +47,8 @@
             text-align: center;
         }
 
-        .project img {
+        .project img,
+        .project iframe {
             width: 100%;
             max-width: 450px;
             border: 2px solid black;
@@ -55,8 +56,9 @@
             transition: transform 0.3s;
         }
 
-        .project img:hover {
+        .project img:hover{
             transform: scale(1.1); /* Add a scale effect on hover */
+            display: block; /* Show the video container on hover */
         }
 
         .project-title {
@@ -101,7 +103,7 @@
     <div class="project-grid">
         <div class="project">
             <a href="revv.html">
-                <img src="revv.jpeg" alt="REVV" onmouseover="playVideo(this, 'https://www.youtube.com/embed/cvnLFxSm_ks?si=n9BN-AEXT8qqMv5_')" onmouseout="stopVideo(this)">
+                <img src="revv.jpeg" alt="REVV" class="project-img">
                 <div class="project-title"><br>REVV Car Simulation</div>
             </a>
             <div class="project-description">It is a car simulation game containing 5 cars such as sports car, hatchbacks, sedans, and offroaders, on different types of tracks such as a race track or an offroad course.</div>
@@ -147,16 +149,6 @@
 
     </div>
 
-    <script>
-        function playVideo(element, videoLink) {
-            element.src = videoLink;
-        }
-
-        function stopVideo(element) {
-            // Replace the videoLink with the static image source
-            element.src = 'revv.jpeg';
-        }
-    </script>
 
 </body>
 </html>
