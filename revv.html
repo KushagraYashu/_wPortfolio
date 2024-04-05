@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REVV</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,6 +66,35 @@
             border: none;
             border-radius: 5px;
         }
+
+        @media only screen and (max-width: 810px) {
+            /* Media query for screens up to 600px wide (typically smartphones) */
+            .project-name {
+                font-size: 24px; /* Decrease font size for smaller screens */
+            }
+
+            .video-container iframe {
+                height: 250px; /* Decrease video height for smaller screens */
+            }
+
+            .project-description {
+                font-size: 14px; /* Decrease font size for smaller screens */
+                margin: 10px auto; /* Adjust margin for smaller screens */
+                max-width: 80%; /* Decrease max-width for smaller screens */
+            }
+
+            .repository-button,
+            .home-button {
+                left: 10px; /* Adjust left position for mobile */
+                font-size: 15px; /* Decrease font size for smaller screens */
+                padding: 10px;
+            }
+
+            .repository-button{
+                left: 50%;
+            }
+        }
+
     </style>
 </head>
 <body>
