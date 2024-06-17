@@ -2,11 +2,12 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Run</title>
+    
+    <title>Color Switch</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="icon" href="revv-favicon.ico" type="image/x-icon">
+    <link rel="icon" href="color-switch-favicon.ico" type="image/x-icon">
 
     <style>
         body {
@@ -14,11 +15,6 @@
             color: black;
             font-family: 'Roboto', Arial, sans-serif;
             text-align: center;
-        }
-
-        .title{
-            font-weight: bold; 
-            font-size: 20px;
         }
 
         .project-name {
@@ -37,6 +33,13 @@
             height: 450px;
         }
 
+        .project-description {
+            font-size: 16px;
+            text-align: center; /* Center-align the project description */
+            margin: 20px auto; /* Center the description box and decrease its width */
+            max-width: 1000px;
+        }
+
         .home-button:hover {
             transform: scale(1.1);
         }
@@ -44,13 +47,6 @@
         .repository-button:hover{
             left: 44.5%;
             transform: scale(1.1);
-        }
-
-        .project-description {
-            font-size: 16px;
-            text-align: center; /* Center-align the project description */
-            margin: 20px auto; /* Center the description box and decrease its width */
-            max-width: 1000px;
         }
 
         .repository-button {
@@ -112,41 +108,41 @@
                 transform: scale(1.1);
             }
         }
+
     </style>
 </head>
 <body>
-    <a href="index.html" class="home-button">Home</a>
-    <div class="project-name">Run</div>
+    <a href="/index.html" class="home-button">Home</a>
+    <div class="project-name">Color Switch</div>
     <div class="project-description">
         <!-- <div style="font-weight: bold;">[ In Progress ]<br></div> -->
-        A platform based Runner game.
+        Recreation of a famous Android Game.
     </div>
 
     <div class="video-container">
         <!-- Replace the src attribute with your YouTube video link -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/wzkhXQspQfo?si=fu9l1wHNvYWwaGFr?vq=hd1080" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mgN-XsGF-Nw?si=CrHtgI24xClRgpgG?vq=hd1080" frameborder="0" allowfullscreen></iframe>
     </div>
 
     <div class="project-description">
         <!-- Add your project description here -->
-        <div class = "title">Key Points</div>
+        <div style="font-weight: bold; font-size: 20px;">Key Points</div>
         <br>
-        RUN is a platform-based running game and is one of my first Unity Projects.
+        Color Switch is a clone game of "Color Switch" for Android and iOS, which is available on <a href="https://play.google.com/store/apps/details?id=com.colorswitch.switch2" style="color: blue;" target="_blank">Play Store</a> and <a href="https://apps.apple.com/in/app/color-switch/id1314725881" style="color: blue;" target="_blank">App Store</a>. I tried to replicate the same for a Windows-based device.
+
         <br><br>
-        The player has the goal to reach 500 score points upon completion after which the game ends. The score points increase based on the distance and the speed of the player's cube.
+        It features a randomly colored player and the player has to go through multiple colored obstacles to reach the Finish Line.
         <br><br>
-        The player will face enemy cubes in his path, the enemies will also shoot at the player.
+        The obstacles are divided into 4 differently coloured panels, with one colour being the same as the player's. The player can only cross through the same colored panel or else he will die.
         <br><br>
-        An enemy bullet does 2HP of damage while colliding with the enemy, which decreases 15HP from the total of 100 Player HP.
+        The obstacles continuously move and rotate to make the level more challenging for the player.
         <br><br>
-        There are also abilities placed on the platform, such as Speed and Heal. Heal ability heals up the player to full 100HP while speed boosts the movement speed of the player by 8 times the initial speed.
-        <br><br>
-        A glow effect is also implemented on the player based on either Low HP (Red Glow) or Speed Boost Ability (Blue Glow).
+        There is functionality for custom particle system effects for player death and player win. The game currently supports only a single level but is planned to expand soon.
         <br><br>
         <div style="font-style: italic; font-weight: lighter;"> More details on the components and working can be provided upon request.</div>
     </div>
     <br>
-    <a href="https://bitbucket.org/kushagra_unitydev/run/src/main/" class="repository-button" target="_blank">Repository Link</a>
+    <a href="https://github.com/KushagraYashu/COLOR-SWITCH-UNITY" class="repository-button" target="_blank">Repository Link</a>
     <br>
     <br>
     <br>

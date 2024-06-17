@@ -2,11 +2,11 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pakdam Pakdai</title>
+    <title>Gunner FPS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="icon" href="pakdam-pakdai-favicon.ico" type="image/x-icon">
+    <link rel="icon" href="gunner-favicon.ico" type="image/x-icon">
 
     <style>
         body {
@@ -32,13 +32,6 @@
             height: 450px;
         }
 
-        .project-description {
-            font-size: 16px;
-            text-align: center; /* Center-align the project description */
-            margin: 20px auto; /* Center the description box and decrease its width */
-            max-width: 1000px;
-        }
-
         .home-button:hover {
             transform: scale(1.1);
         }
@@ -46,6 +39,13 @@
         .repository-button:hover{
             left: 44.5%;
             transform: scale(1.1);
+        }
+
+        .project-description {
+            font-size: 16px;
+            text-align: center; /* Center-align the project description */
+            margin: 20px auto; /* Center the description box and decrease its width */
+            max-width: 1000px;
         }
 
         .repository-button {
@@ -110,38 +110,36 @@
     </style>
 </head>
 <body>
-    <a href="index.html" class="home-button">Home</a>
-    <div class="project-name">Pakdam Pakdai</div>
+    <a href="/index.html" class="home-button">Home</a>
+    <div class="project-name">Gunner FPS</div>
     <div class="project-description">
         <!-- <div style="font-weight: bold;">[ In Progress ]<br></div> -->
-        Simulated Implementation of a real-world game.
+        A First-Person-Shooter (FPS) game.
     </div>
 
     <div class="video-container">
         <!-- Replace the src attribute with your YouTube video link -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/vc2MngxySk4?si=crNu7jgQc2AZifLJ?vq=hd1080" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/iJfEiVMgpwE?si=-Uvj6ED8m2xGZoSI?vq=hd1080" frameborder="0" allowfullscreen></iframe>
     </div>
 
     <div class="project-description">
         <!-- Add your project description here -->
         <div style="font-weight: bold; font-size: 20px;">Key Points</div>
         <br>
-        Pakdam Pakdai is a Unity Implementation of the real-world game of "Chase & Tag" where one player has to chase the other to win and the other player has to survive the time to attain victory.
+        Gunner is a First Person Shooter game based on the training range mode of the famous FPS game called VALORANT. It is implementing some basic features of that game.
         <br><br>
-        In Unity, it can be played by 2 players at the same time with one using WASD Input keys and the other using Arrow (←↑↓→) Keys.
+        It has 6 different weapons such as assault rifles, sniper rifles, and Glock. The player can choose from these options via a "Buy" Menu and then can proceed to play any mode he wishes using the selected weapon.
         <br><br>
-        One of the players will be assigned the chaser role and the survivor or runner role, the runner has to avoid being tagged by the chaser either by running or hiding for the given time.
+        The weapon models are from the Unity Asset Store but the Player Controller, Gun Behaviour, and Animations are developed in-house. 
         <br><br>
-        To make it more challenging and interesting there is a timer, If the chaser tags the survivor before time runs out, then the Chaser wins otherwise the survivor wins. Also, the game is set on a platform and if any player falls over the platform then the opposing player wins.
+        The Game also features training modes such as target training, Free Bot Shoot training, and Timed Bot Shoot training. All are derived from the "Range" mode of VALORANT.
         <br><br>
-        There are also abilities such as extra speed, which provides extra zing to the game and keeps it interesting for both players.
-        <br><br>
-        The platform on which the game is set also includes other Architectures such as stairs and arches which aids the survivor in hiding.
+        The First-person camera controller is made in-house. The player movement is derived from the Character Controller component by Unity Engine. It is also used to implement more features such as Jump.
         <br><br>
         <div style="font-style: italic; font-weight: lighter;"> More details on the components and working can be provided upon request.</div>
     </div>
     <br>
-    <a href="https://github.com/KushagraYashu/PAKDAM-PAKDAI-Unity" class="repository-button" target="_blank">Repository Link</a>
+    <a href="https://bitbucket.org/kushagra_unitydev/gunner_combined/src/main/" class="repository-button" target="_blank">Repository Link</a>
     <br>
     <br>
     <br>
