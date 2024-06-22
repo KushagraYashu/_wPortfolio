@@ -42,7 +42,6 @@
         }
 
         .repository-button:hover{
-            left: 44.5%;
             transform: scale(1.1);
         }
 
@@ -53,11 +52,16 @@
             max-width: 1000px;
         }
 
+        .repoContainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         .repository-button {
             position: fixed;
             bottom: 20px; /* Set the bottom position with margin */
-            left: 50%; /* Set to center horizontally */
-            transform: translateX(-50%); /* Center horizontally */
+            display: block;
             background-color: black;
             color: white;
             padding: 10px 20px;
@@ -65,6 +69,7 @@
             text-decoration: none;
             border: none;
             border-radius: 5px;
+            transition: transform 0.3s;
         }
 
         .home-button {
@@ -78,6 +83,7 @@
             text-decoration: none;
             border: none;
             border-radius: 5px;
+            transition: transform 0.3s;
         }
 
         @media only screen and (max-width: 810px) {
@@ -146,7 +152,9 @@
         <div style="font-style: italic; font-weight: lighter;"> More details on the components and working can be provided upon request.</div>
     </div>
     <br>
-    <a href="https://bitbucket.org/kushagra_unitydev/run/src/main/" class="repository-button" target="_blank">Repository Link</a>
+    <div class="repoContainer">
+        <a href="https://bitbucket.org/kushagra_unitydev/run/src/main/" class="repository-button" target="_blank">Repository Link</a>
+    </div>
     <br>
     <br>
     <br>

@@ -3,211 +3,34 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kushagra Portfolio</title>
+    <link rel="stylesheet" href="./CSS/indexCSS.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="icon" href="./Favicons/keyboard-favicon.ico" type="image/x-icon">
-    <style>
-        body {
-            background-color: white;
-            color: black;
-            font-family: 'Roboto', Arial, sans-serif;
-            text-align: center;
-        }
-
-        .header {
-            font-size: 36px;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-
-        .title {
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        .intro {
-            font-size: 16px;
-            max-width: 100%;
-            margin: 0 auto;
-        }
-
-        .subtitle {
-            font-size: 32px;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            grid-template-rows: repeat(auto-fit, minmax(70px, 1fr));
-            gap: 20px;
-            margin: 20px;
-        }
-
-        .project {
-            text-align: center;
-            transition: transform 0.3s;
-        }
-
-        .project img,
-        .project iframe {
-            width: 100%;
-            max-width: 450px;
-            border: 2px solid black;
-            cursor: pointer;
-            transition: transform 0.3s;
-        }
-
-        .project:hover{
-            transform: scale(1.1); /* Add a scale effect on hover */
-            display: block; /* Show the video container on hover */
-        }
-
-        .project-title {
-            font-weight: bold;
-        }
-
-        .project-description {
-            font-size: 14px;
-            margin-top: 10px;
-        }
-
-        .unity-button {
-            transition: transform 0.3s;
-            border-radius: 5px;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-color: black;
-            color: white;
-            padding: 10px 20px;
-            font-weight: bold;
-            text-decoration: none;
-            
-        }
-
-        .unity-button:hover{
-            transform: scale(1.1); /* Add a scale effect on hover */
-            display: block; /* Show the video container on hover */
-        }
-
-        .unity-button img {
-            vertical-align: middle;
-            width: 30px;
-            height: 30px;
-            margin-right: 10px;
-        }
-
-        .buttons-container {
-            position: absolute;
-            top: 10px;
-            left: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            z-index: 1000;
-        }
-
-        .button {
-            margin-bottom: 3px;
-            padding: 8px;
-            background-color: black;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            transition: transform 0.3s;
-        }
-
-        .button:hover{
-            transform: scale(1.1); /* Add a scale effect on hover */
-            display: block; /* Show the video container on hover */
-        }
-
-        .button img {
-            width: 20px;
-            height: 20px;
-            margin-right: 10px;
-        }
-
-        @media only screen and (max-width: 810px) {
-            .header {
-                font-size: 24px;
-            }
-
-            .title {
-                font-size: 18px;
-            }
-
-            .intro {
-                font-size: 14px;
-                max-width: 60%;
-                /* margin: 0 auto; */
-            }
-
-            .subtitle {
-                font-size: 24px;
-                margin: 10px;
-            }
-
-            .project-title {
-                font-size: 16px;
-            }
-
-            .project-description {
-                font-size: 12px;
-            }
-
-            .project-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-                grid-template-rows: repeat(auto-fit, minmax(70px, 1fr));
-                gap: 20px;
-                margin-left: 0;
-            }
-
-            .button {
-                margin-left: 0;
-                padding: 0x;
-                font-size: 0;
-            }
-
-            .button:active{
-                transform: scale(1.1);
-            }
-
-            .button img {
-                margin-right: 0px;
-            }
-
-            .buttons-container {
-                left: 2%;
-                position: absolute;
-            }
-
-            .unity-button img {
-            vertical-align: middle;
-            width: 20px;
-            height: 20px;
-            margin-right: 0px;
-            }
-            
-            .unity-button {
-                font-size: 0px;
-            }
-
-            .unity-button:active{
-                transform: scale(1.1);
-            }
-        }
-
-    </style>
 </head>
 <body>
+    <div class="navbar-container">
+        <a href="#projects" class="button-right">
+            Projects
+        </a>
+        <a href="#workExp" class="button-right">
+            Work <br> Experience
+        </a>
+        <a href="#education" class="button-right">
+            Education
+        </a>
+        <a href=#certificate class="button-right">
+            Certificates & <br> Courses
+        </a>
+        <a href=#jams class="button-right">
+            Participation & <br> Achievements
+        </a>
+        <a href=#papers class="button-right">
+            Publications
+        </a>
+    </div>
+
     <div class="buttons-container">
         <a href="https://drive.google.com/file/d/1T-SZcULYMcVRP4E-yI9DY7w4o6lZOIt2/view?usp=drive_link" target="_blank" class="button">
             <img src="./Icons/resume_icon.png" alt="Resume Icon">
@@ -227,15 +50,25 @@
         </a>
     </div>
     <a href="https://kushagrayashu.github.io/_portfolio/" class="unity-button" target="_blank">
-        <img src="./Icons/unity-logo.png" alt="Unity Logo"> Unity Based Portfolio
+        <img src="./Icons/unity-logo.png" alt="Unity Logo"> Unity Based Portfolio <br> <i style="font-size: x-small;">(not up to date)</i>
     </a>
     <div class="header">Kushagra</div>
     <div class="title">Game Developer</div><br>
     <div class="intro">Undergrad student with a penchant for Video Games Designing and Development</div>
     <br>
-    <div class="subtitle">Click on Project Name or photograph to view the projects</div>
+
+    <div class="subtitle">Click on project name or photograph to view the <br>
+        <span style="color:red; text-decoration: underline;" id="projects">Projects</span></div>
     
     <div class="project-grid">
+        <div class="project">
+            <a href="./HTML pages/ipark.html">
+                <img src="./Pics/ipark.jpg" alt="iPark" class="project-img">
+                <div class="project-title"><br>iPark: Intelligent Parking</div>
+            </a>
+            <div class="project-description">A machine learning project that utilises Unity ML-Agents, Reinforcement Learning, and the Unity engine to create an intelligent system capable of parking a car in dynamic scenarios.</div>
+        </div>
+
         <div class="project">
             <a href="./HTML pages/revv.html">
                 <img src="./Pics/revv.jpeg" alt="REVV" class="project-img">
@@ -282,6 +115,337 @@
 
         <!-- Add more project entries with images, titles, and descriptions here -->
 
+    </div>
+
+    <br>
+
+    <div class="subtitle">Click on job title or organisation to view more on the <br>
+        <span style="color:red; text-decoration: underline;" id="workExp">Work Experience</span>
+    </div>
+    
+    <div class="workExpSection">
+        <div class="expEntry">
+            <a href="./HTML pages/vyorius.html">
+                <div class="exp-title">Unity Developer</div>
+                <div class="org-title">
+                    <img src="./Icons/vyoriusBird.jpg" alt="VyoriusBird">
+                    Vyorius Drones
+                </div>
+            </a>
+            <br>
+            <div class="duration"><i>Jul 2023 - Dec 2023</i><br> <i>Remote</i></div>
+            <ul>
+                <li>Developed and maintained the Drone Flight Simulator, Drone Test Simulator, and Drone Soccer to support drone pilots training in drone manoeuvrability.</li>
+                <li>Operated tools such as Unity Engine, Terrain tools, Custom Input Managers, Physics, and Animations.</li>
+            </ul>
+        </div>
+
+        <div class="expEntry">
+            <a href="./HTML pages/alpha.html">
+                <div class="exp-title">Python Content Creator</div>
+                <div class="org-title">
+                    <img src="./Icons/alphadynamic_logo.jpg" alt="alphadynamic">
+                    Alphadynamic
+                </div>
+            </a>
+            <br>
+            <div class="duration"><i>May 2022 - Jul 2022</i> <br> <i>Remote</i></div>
+            <ul>
+                <li>Devised multiple small games to educate children about Python Language.</li>
+                <li>Engineered various AI models and AI apps using web services like Nyckel and MIT App Inventor.</li>
+            </ul>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="subtitle">Click on degree or institute name to view more on the <br>
+        <span style="color:red; text-decoration: underline;" id="education">Education</span>
+    </div>
+    <div class="eduSection">
+        <div class="eduEntry">
+            <a href="./HTML pages/btech.html">
+                <div class="edu-title">Undergraduate Degree
+                    <p style="margin-left: 20px; font-weight: bold; font-size: large;">Bachelor of Technology (B.Tech) in Computer Science And Engineering (Artificial Intelligence & Machine Learning) </p>
+                </div>
+                <div class="eduOrg-title">
+                    <img src="./Icons/AKTU_Logo.png" alt="AKTU">
+                    Dr. A.P.J. Abdul Kalam Technical University (AKTU)
+                </div>
+            </a>
+            <br>
+            <div class="duration">
+                <i>Sep 2020 - Jul 2024</i> <br>
+                <i>Ghaziabad, India</i>
+            </div>
+            <ul>
+                <li>CGPA: 8.204 (up to VII Semester)</li>
+            </ul>
+        </div>
+
+        <div class="eduEntry">
+            <a href="./HTML pages/12th.html">
+                <div class="edu-title">Senior Secondary School (12th)
+                    <p style="margin-left: 20px; font-weight: bold; font-size: large;">Equivalent to UK's General Certificate of Education Advanced Level (GCE A-Level) </p>
+                </div>
+                <div class="eduOrg-title">
+                    <img src="./Icons/cbseLogo.png" alt="CBSE">
+                    Central Board of Secondary Education (CBSE)
+                </div>
+            </a>
+            <br>
+            <div class="duration">
+                <i>Jul 2020</i> <br>
+                <i>Delhi, India</i>
+            </div>
+            <ul>
+                <li>Percentage: 90.6%</li>
+            </ul>
+        </div>
+
+        <div class="eduEntry">
+            <a href="./HTML pages/10th.html">
+                <div class="edu-title">Secondary School (10th)
+                    <p style="margin-left: 20px; font-weight: bold; font-size: large;">Equivalent to UK's General Certificate of Secondary Education (GCSE) </p>
+                </div>
+                <div class="eduOrg-title">
+                    <img src="./Icons/cbseLogo.png" alt="CBSE">
+                    Central Board of Secondary Education (CBSE)
+                </div>
+            </a>
+            <br>
+            <div class="duration">
+                <i>Mar 2018</i> <br>
+                <i>Ghaziabad, India</i>
+            </div>
+            <ul>
+                <li>Percentage: 90.4%</li>
+            </ul>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="subtitle">Click on certificate or course name to view more on the <br>
+        <span style="color:red; text-decoration: underline;" id="certificate">Certificate & Courses</span>
+    </div>
+    <div class="certSection">
+        <div class="certEntry">
+            <a href="./HTML pages/introtoGD.html">
+                <div class="cert-title">CS50's Introduction to Game Development
+                    <!-- <p style="margin-left: 20px; font-weight: bold; font-size: large;">Equivalent to UK's General Certificate of Secondary Education (GCSE) </p> -->
+                </div>
+                <div class="certOrg-title">
+                    <img src="./Icons/harvardLogo.png" alt="Harvard">
+                    Harvard University
+                </div>
+            </a>
+            <br>
+            <div class="duration">
+                <i>Jul 2023 to Dec 2023</i> <br>
+                <i>Online</i>
+            </div>
+        </div>
+
+        <div class="certEntry">
+            <a href="./HTML pages/C-sharp-funda.html">
+                <div class="cert-title">Unity C# Scripting Fundamentals
+                    <!-- <p style="margin-left: 20px; font-weight: bold; font-size: large;">Equivalent to UK's General Certificate of Secondary Education (GCSE) </p> -->
+                </div>
+                <div class="certOrg-title">
+                    <img src="./Icons/pluralsightLogo.png" alt="Pluralsight">
+                    Pluralsight
+                </div>
+            </a>
+            <br>
+            <div class="duration">
+                <i>Oct 2020</i> <br>
+                <i>Online</i>
+            </div>
+        </div>
+
+        <div class="certEntry">
+            <a href="./HTML pages/animfunda.html">
+                <div class="cert-title">Unity Animation Fundamentals
+                    <!-- <p style="margin-left: 20px; font-weight: bold; font-size: large;">Equivalent to UK's General Certificate of Secondary Education (GCSE) </p> -->
+                </div>
+                <div class="certOrg-title">
+                    <img src="./Icons/pluralsightLogo.png" alt="Pluralsight">
+                    Pluralsight
+                </div>
+            </a>
+            <br>
+            <div class="duration">
+                <i>Oct 2020</i> <br>
+                <i>Online</i>
+            </div>
+        </div>
+
+        <div class="certEntry">
+            <a href="./HTML pages/unity2018funda.html">
+                <div class="cert-title">Unity 2018 Fundamentals
+                    <!-- <p style="margin-left: 20px; font-weight: bold; font-size: large;">Equivalent to UK's General Certificate of Secondary Education (GCSE) </p> -->
+                </div>
+                <div class="certOrg-title">
+                    <img src="./Icons/pluralsightLogo.png" alt="Pluralsight">
+                    Pluralsight
+                </div>
+            </a>
+            <br>
+            <div class="duration">
+                <i>Apr 2020</i> <br>
+                <i>Online</i>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+
+    <div class="subtitle">Click on game jam or game name to view more on the <br>
+        <span style="color:red; text-decoration: underline;" id="jams">Participation & Achievements</span>
+    </div>
+    <div class="jamSection">
+        <div class="jamEntry">
+            <a href="./HTML pages/brackeys2023-2.html">
+                <div class="jam-title">Brackeys Game Jam 2023.2
+                    <p style="margin-left: 20px; font-weight: bold; font-size: large;">Created Game: Dark World </p>
+                </div>
+                <!-- <div class="certOrg-title">
+                    <img src="./Icons/pluralsightLogo.png" alt="Pluralsight">
+                    Pluralsight
+                </div> -->
+            </a>
+            <div class="duration">
+                <i>Aug 2023</i> <br>
+                <i>Online</i>
+            </div>
+            <ul>
+                <li>A Week-long jam to create a game using the theme "Diving Deeper"</li>
+            </ul>
+        </div>
+
+        <div class="jamEntry">
+            <a href="./HTML pages/1bitjam2023.html">
+                <div class="jam-title">1-Bit Jam 2023
+                    <p style="margin-left: 20px; font-weight: bold; font-size: large;">Created Game: Passage</p>
+                </div>
+                <!-- <div class="certOrg-title">
+                    <img src="./Icons/pluralsightLogo.png" alt="Pluralsight">
+                    Pluralsight
+                </div> -->
+            </a>
+            <div class="duration">
+                <i>Aug 2023</i> <br>
+                <i>Online</i>
+            </div>
+            <ul>
+                <li>A Week-long jam to create a game using the theme "Light & Dark"</li>
+            </ul>
+        </div>
+
+        <div class="jamEntry">
+            <a href="./HTML pages/icojam2023.html">
+                <div class="jam-title">IcoJam 2023
+                    <p style="margin-left: 20px; font-weight: bold; font-size: large;">Created Game: 3 Waves 2 Lives 1 Player <br><i style="font-weight: normal; font-size: medium;">(Ranked 88 out of 300 entries for "theme")</i></p>
+                </div>
+                <!-- <div class="certOrg-title">
+                    <img src="./Icons/pluralsightLogo.png" alt="Pluralsight">
+                    Pluralsight
+                </div> -->
+            </a>
+            <div class="duration">
+                <i>Jul 2023</i> <br>
+                <i>Online</i>
+            </div>
+            <ul>
+                <li>A 72 hour jam to create a game using the theme "3... 2.. 1."</li>
+            </ul>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="subtitle">Click on research paper or article name to view more on the <br>
+        <span style="color:red; text-decoration: underline;" id="papers">Publications</span>
+    </div>
+    <div class="paperSection">
+        <div class="paperEntry">
+            <a href="./HTML pages/ijfmr-autopark.html">
+                <div class="paper-title">Development and Evaluation of Autonomous Parking System Utilising Reinforcement Learning Agents within Unity3D Environment
+                    <!-- <p style="margin-left: 20px; font-weight: bold; font-size: large;">Equivalent to UK's General Certificate of Secondary Education (GCSE) </p> -->
+                </div>
+                <div class="paperOrg-title">
+                    <img src="./Icons/ijfmrLogo.png" alt="IJFMR">
+                    International Journal For Multidisciplinary Research (IJFMR)
+                </div>
+            </a>
+            <br>
+            <div class="duration">
+                <i>Jun 2024</i>
+            </div>
+            <ul>
+                <li>This paper describes how RL agents in the Unity Environment can perform parking.</li>
+                <li>The goal of the study is to propose a method that makes use of reinforcement learning techniques offered by the Unity ML-Agents framework within Unity's realistic 3D simulation in order to solve the requirement for autonomous parking solutions. </li>
+                <li>The paper is published in <span style="text-decoration: underline;">IJFMR's Volume 6, Issue 3, May-June 2024</span></li>
+            </ul>
+        </div>
+
+        <div class="paperEntry">
+            <a href="./HTML pages/gamesandbrain.html">
+                <div class="paper-title">Video Games and Brain Development
+                    <!-- <p style="margin-left: 20px; font-weight: bold; font-size: large;">Equivalent to UK's General Certificate of Secondary Education (GCSE) </p> -->
+                </div>
+                <div class="paperOrg-title">
+                    <img style="width: 85px;" src="./Icons/conatusLogo.png" alt="conatus">
+                    Conoscenza 22
+                </div>
+            </a>
+            <br>
+            <div class="duration">
+                <i>Oct 2022</i>
+            </div>
+            <ul>
+                <li>This article describes how video games affect human brain.</li>
+                <li>The goal of the study is to discover the benefits and disadvantages of gaming and determine the optimum time spent on games. </li>
+                <li>The article is published in the <span style="text-decoration: underline;">Conoscenza 22 edition</span></li>
+            </ul>
+        </div>
+
+        <div class="paperEntry">
+            <a href="./HTML pages/agilewithlakshi.html">
+                <div class="paper-title">Practices of Implementing Agile Procedures & DevOps Methodologies in the development of Web Applications
+                    <!-- <p style="margin-left: 20px; font-weight: bold; font-size: large;">Equivalent to UK's General Certificate of Secondary Education (GCSE) </p> -->
+                </div>
+                <div class="paperOrg-title">
+                    <img src="./Icons/AKGEClogo.png" alt="akgec">
+                    Glimpse - Journal of Computer Science
+                </div>
+            </a>
+            <br>
+            <div class="duration">
+                <i>Oct 2022</i>
+            </div>
+            <ul>
+                <li>Co-Authored with Lakshita Sejwal on a paper targeting Agile and DevOps methodologies in developing Web Applications according to IT standards.</li>
+                <li>The paper is published in <span style="text-decoration: underline;">Glimpse - Journal of Computer Science, Volume 1(1), January - June 2022, pages 30-32</span></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <div style="font-size: medium; text-align: left;">
+        <p style="text-align: left; margin-left: 10px; font-weight: bold; text-decoration: underline;">Interests:</p>
+        <ul>
+            <li>Playing and developing video games</li>
+            <li>Cafe hopping</li>
+            <li>Watching cricket, football, F1, esports leagues, and films</li>
+            <li>Cooking</li>
+        </ul>
+    </div>
+    <br><br>
+    <hr>
+    <i style="display: flex; align-items: left; font-size: x-small;">Updated on: 22nd June 2024</i><br>
+    <div style="display: flex; justify-content: right; align-items: right;">
+        <i style="display: block; font-size: x-small;">Made by: Kushagra and ChatGPT</i>
     </div>
 
 
