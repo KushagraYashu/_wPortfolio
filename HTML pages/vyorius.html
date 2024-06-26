@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Unity Developer at Vyorius Drones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="../Favicons/unityP.ico" type="image/x-icon">
+
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: 'Roboto', Arial, sans-serif;
+            text-align: center;
+        }
+
+        .job-name {
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .job-org {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .job-org img{
+            margin-right: 10px;
+            width: 40px;
+            height: 40px;
+        }
+
+        .video-container {
+            margin-top: 20px;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+        }
+
+        .job-description {
+            font-size: 16px;
+            text-align: left; /* Center-align the project description */
+            margin: 20px auto; /* Center the description box and decrease its width */
+            max-width: 60%;
+
+        }
+
+        .home-button:hover {
+            transform: scale(1.1);
+        }
+
+        .repository-button:hover{
+            /* left: 44.5%; */
+            transform: scale(1.1);
+        }
+
+        .repoContainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .repository-button {
+            position: fixed;
+            bottom: 20px; /* Set the bottom position with margin */
+            display: block;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .home-button {
+            position: fixed;
+            top: 20px;
+            left: 20px; /* Add left margin to the Home button */
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        @media only screen and (max-width: 810px) {
+            /* Media query for screens up to 600px wide (typically smartphones) */
+            .job-name {
+                font-size: 24px; /* Decrease font size for smaller screens */
+            }
+
+            .job-org {
+                font-size: 18px; /* Decrease font size for smaller screens */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .video-container iframe {
+                height: 250px; /* Decrease video height for smaller screens */
+            }
+
+            .job-description {
+                font-size: 14px; /* Decrease font size for smaller screens */
+                margin: 10px auto; /* Adjust margin for smaller screens */
+                max-width: 80%; /* Decrease max-width for smaller screens */
+            }
+
+            .repository-button,
+            .home-button {
+                left: 10px; /* Adjust left position for mobile */
+                font-size: 15px; /* Decrease font size for smaller screens */
+                padding: 10px;
+            }
+
+            .repository-button{
+                left: 50%;
+            }
+
+            .repository-button:active,
+            .home-button:active{
+                transform: scale(1.1);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="home-button">Home</a>
+    <div class="job-name">Unity Developer</div>
+    <br>
+    at
+    <div class="job-org">
+        <img src="../Icons/vyoriusBird.jpg" alt="VyoriusBird">
+        <!-- <div style="font-weight: bold;">[ In Progress ]<br></div> -->
+        Vyorius Drones
+    </div>
+    <span style="font-size: small;">from Jul 2023 to Dec 2023</span>
+
+    <!-- <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mgN-XsGF-Nw?si=CrHtgI24xClRgpgG?vq=hd1080" frameborder="0" allowfullscreen></iframe>
+    </div> -->
+
+    <div class="job-description">
+        <!-- Add your project description here -->
+        <div style="font-weight: bold; font-size: 20px;">Key Points</div>
+        <br>
+        At Vyorius, I was appointed as a Unity Developer and was responsible for developing and maintaining their “Drone Flight Simulator”, “Drone Test Simulator”, and “Drone Soccer” products. The products had basic features implemented by the team beforehand. The major tasks for me were to add new features or levels based on client requests and also to fix any bugs and fill any production gaps. 
+        <br><br>
+        <span style="text-decoration: underline;">Training simulator tasks:</span>
+        <br>
+        <div style="margin-left: 10px;">
+            Firstly, I was assigned to develop a new level, Level 6, “The Lighthouse”. At that level, I created a whole terrain with the predetermined lighthouse challenges designed to train the roll with the ascent feature.
+            <br><br>
+            I also worked on the rejuvenation of other levels. I also had to devise a new technique for the camera movement for the drone camera and achieved it with the “Cinemachine” component provided by the Unity Engine.
+            <br><br>
+            Apart from that, I was assigned to develop a logic for the athletes at the stadium level. The athletes have to run circularly. I achieved the same with the help of the “sin” and “cos” wave functionality of the C# language.
+            <br><br>
+            I also worked on the environment upgrade, maintaining the quality of the assets or setting up animations according to need and quality, adding the required props and level designing, and managing the appropriate audio such as flight sounds or crash sounds.
+        </div>
+        <br>
+        <span style="text-decoration: underline;">Test simulator tasks:</span>
+        <br>
+        <div style="margin-left: 10px;">
+            I was assigned to develop 4 patterns (rectangle, circle, infinity, and helix) based on the standard measurements and deploy them on the web (Vyorius Simulator Website) and Windows systems (.exe builds). 
+            <br><br>
+            I implemented key logic for the scoring system, the scoring is very tight and based on the regulations. The logic is to find the number of times the player deviated from the correct path and the amount of deviation, the score is then calculated based on that information.
+            <br><br>
+            I also set up the environment for the Test Sim. The environment includes a city background with some characters overlooking the test.
+        </div>
+        <br><br>
+        <div style="font-style: italic; font-weight: lighter;"> More details on the work with videos can be seen on the <a href="https://drive.google.com/drive/folders/1awJ5amicjzL5_7NLeIfpv379ylwwnDPw" target="_blank" style="text-decoration: underline; color: blue;">Drive Folder</a>.</div>
+        <br>
+        <div style="font-style: italic; font-weight: lighter;"> References:<br><a href="https://www.linkedin.com/in/pankaj-kumar-92b3497a/" target="_blank" style="text-decoration: underline; color: blue;">Pankaj Kumar</a> (Co-Founder, CTO), Ph: +91 88021 12520 <br><a href="https://www.linkedin.com/in/amulyagupta/" target="_blank" style="text-decoration: underline; color: blue;">Amulya Gupta</a> (Tech Lead), Ph: +91 96508 24906</div>
+    </div>
+    <br>
+    <div class="repoContainer">
+        <a href="https://drive.google.com/drive/folders/1awJ5amicjzL5_7NLeIfpv379ylwwnDPw" class="repository-button" target="_blank">Vyorius Work Drive Folder</a>
+    </div>
+    <br>
+    <br>
+    <br>
+</body>
+</html>

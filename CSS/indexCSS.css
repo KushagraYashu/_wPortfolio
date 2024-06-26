@@ -165,6 +165,10 @@
             text-decoration-color: black;
         }
 
+        .edu-title p {
+            margin-left: 20px; font-weight: bold; font-size: large;
+        }
+
         .cert-title {
             text-align: left;
             font-weight: bold;
@@ -415,7 +419,43 @@
                 font-size: 16px;
             }
 
+            .edu-title{
+                font-size: 16px;
+            }
+
+            .edu-title p{
+                font-size: 15px;
+            }
+
+            .jam-title{
+                font-size: 16px;
+            }
+
+            .jam-title p{
+                font-size: 15px;
+            }
+
+            .cert-title{
+                font-size: 15px;
+            }
+
+            .paper-title{
+                font-size: 15px;
+            }
+
             .org-title{
+                font-size: 14px;
+            }
+
+            .eduOrg-title{
+                font-size: 14px;
+            }
+
+            .certOrg-title{
+                font-size: 14px;
+            }
+
+            .paperOrg-title{
                 font-size: 14px;
             }
 
@@ -423,7 +463,19 @@
                 font-size: 10px;
             }
 
+            .eduEntry ul{
+                font-size: 12px;
+            }
+
             .expEntry ul{
+                font-size: 12px;
+            }
+
+            .jamEntry ul{
+                font-size: 12px;
+            }
+
+            .paperEntry ul{
                 font-size: 12px;
             }
 
