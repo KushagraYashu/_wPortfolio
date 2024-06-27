@@ -182,6 +182,16 @@
             text-decoration-color: black;
         }
 
+        .eduSection,
+        .certSection,
+        .jamSection,
+        .workExpSection{
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping of items if needed */
+            justify-content: space-between; /* Distribute items evenly */
+            margin-top: 20px;
+        }
+
         .edu-title {
             text-align: left;
             font-weight: bold;
@@ -226,7 +236,26 @@
             color: inherit;
         }
 
+        .workvideo-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            max-width: 100%;
+            background: #000;
+            margin-top: 10px;
+        }
+        
+        .workvideo-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
         .expEntry{
+            flex: 1 1 30%;
             padding: 10px;
             border: 2px solid grey;
             margin-left: 10px;
@@ -241,6 +270,7 @@
         }
 
         .eduEntry{
+            flex: 1 1 30%;
             padding: 10px;
             border: 2px solid grey;
             margin-left: 10px;
@@ -255,6 +285,7 @@
         }
 
         .certEntry{
+            flex: 1 1 30%;
             padding: 10px;
             border: 2px solid grey;
             margin-left: 10px;
@@ -283,6 +314,7 @@
         }
 
         .jamEntry{
+            flex: 1 1 30%;
             padding: 10px;
             border: 2px solid grey;
             margin-left: 10px;
