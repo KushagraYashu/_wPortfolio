@@ -1,28 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <title>Unity Developer at Vyorius Drones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="../Favicons/unityP.ico" type="image/x-icon">
+
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: 'Roboto', Arial, sans-serif;
+            text-align: center;
+        }
+
+        .job-name {
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .job-org {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .job-org img{
+            margin-right: 10px;
+            width: 40px;
+            height: 40px;
+        }
+
+        .video-container {
+            margin-top: 20px;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+        }
+
+        .job-description {
+            font-size: 16px;
+            text-align: left; /* Center-align the project description */
+            margin: 20px auto; /* Center the description box and decrease its width */
+            max-width: 60%;
+
+        }
+
+        .home-button:hover {
+            transform: scale(1.1);
+        }
+
+        .repository-button:hover{
+            /* left: 44.5%; */
+            transform: scale(1.1);
+        }
+
+        .repoContainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .repository-button {
+            position: fixed;
+            bottom: 20px; /* Set the bottom position with margin */
+            display: block;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .home-button {
+            position: fixed;
+            top: 20px;
+            left: 20px; /* Add left margin to the Home button */
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        @media only screen and (max-width: 810px) {
+            /* Media query for screens up to 600px wide (typically smartphones) */
+            .job-name {
+                font-size: 24px; /* Decrease font size for smaller screens */
+            }
+
+            .job-org {
+                font-size: 18px; /* Decrease font size for smaller screens */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .video-container iframe {
+                height: 250px; /* Decrease video height for smaller screens */
+            }
+
+            .job-description {
+                font-size: 14px; /* Decrease font size for smaller screens */
+                margin: 10px auto; /* Adjust margin for smaller screens */
+                max-width: 80%; /* Decrease max-width for smaller screens */
+            }
+
+            .repository-button,
+            .home-button {
+                left: 10px; /* Adjust left position for mobile */
+                font-size: 15px; /* Decrease font size for smaller screens */
+                padding: 10px;
+            }
+
+            .repository-button{
+                left: 50%;
+            }
+
+            .repository-button:active,
+            .home-button:active{
+                transform: scale(1.1);
+            }
+        }
+
+    </style>
 </head>
 <body>
-    <div style="font-size: medium; text-align: left;">
-        <p style="text-align: left; margin-left: 10px; font-weight: bold; text-decoration: underline;">Skills:</p>
+    <a href="../index.html" class="home-button">Home</a>
+    <div class="job-name">About Kushagra</div>
+    <br><br>
+    <!-- <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mgN-XsGF-Nw?si=CrHtgI24xClRgpgG?vq=hd1080" frameborder="0" allowfullscreen></iframe>
+    </div> -->
+
+    <div class="job-description">
+        <p style="text-align: justify;">
+            Hi there! I'm Kushagra, a passionate developer and tech enthusiast with a deep love for creating and playing computer games. I have dedicated my academic journey to understanding the art of programming and game development. <br><br> Over the years, I've had the opportunity to work on a diverse range of projects, from developing sophisticated Unity games to building AI-driven applications. My experiences at Vyorious Drones and Alphadynamic have honed my skills in game development and content creation, allowing me to bring unique ideas to life. I'm comfortable in various programming languages and tools, and I always strive to stay updated with the latest technological and game industry advancements. <br><br> Beyond academics and work, I enjoy participating in game jams, which not only challenge my abilities but also fuel my passion for continuous learning. When I'm not coding, you can find me exploring new tech trends, playing video games, watching fims, or cooking. <br><br> Feel free to browse through my portfolio to see some of the exciting projects I've worked on, and don't hesitate to reach out if you want to!
+        </p>
+        <p style="text-align: left; font-weight: bold; text-decoration: underline;">Skills:</p>
         <ul>
             <li>Technical: Unity Engine, C#, C++, GitHub</li>
             <li>Behavioural: Problem Solving, Design Thinking, Teamwork, Emotional Intelligence</li>
         </ul>
-    </div>
-    <div style="font-size: medium; text-align: left;">
-        <p style="text-align: left; margin-left: 10px; font-weight: bold; text-decoration: underline;">Languages:</p>
+
+        <p style="text-align: left; font-weight: bold; text-decoration: underline;">Languages:</p>
         <ul>
             <li>English: CEFR Level C1</li>
             <li>हिंदी: CEFR Level C2</li>
             <li>Italiano: CEFR Level A1</li>
         </ul>
-    </div>
-    <div style="font-size: medium; text-align: left;">
-        <p style="text-align: left; margin-left: 10px; font-weight: bold; text-decoration: underline;">Interests:</p>
+
+        <p style="text-align: left; font-weight: bold; text-decoration: underline;">Interests:</p>
         <ul>
             <li>Playing and developing video games</li>
             <li>Cafe hopping</li>
@@ -30,5 +174,8 @@
             <li>Cooking</li>
         </ul>
     </div>
+    <br>
+    <br>
+    <br>
 </body>
 </html>
