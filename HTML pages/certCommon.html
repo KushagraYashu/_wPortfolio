@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Certificates & Courses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="../Favicons/certLogo.ico" type="image/x-icon">
+
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: 'Roboto', Arial, sans-serif;
+            text-align: center;
+        }
+
+        .job-name {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            padding: 40px;
+            /* max-width: 70%; */
+            font-weight: bold;
+            /* margin-top: 20px; */
+        }
+
+        .job-org {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .job-org img{
+            margin-right: 10px;
+            width: 40px;
+            height: 40px;
+        }
+
+        .video-container {
+            margin-top: 20px;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+        }
+
+        .job-description {
+            font-size: 16px;
+            text-align: justify; /* Center-align the project description */
+            margin: 20px auto; /* Center the description box and decrease its width */
+            max-width: 60%;
+
+        }
+
+        .home-button:hover {
+            transform: scale(1.1);
+        }
+
+        .repository-button:hover{
+            /* left: 44.5%; */
+            transform: scale(1.1);
+        }
+
+        .repoContainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .repository-button {
+            /* position: fixed; */
+            bottom: 20px; /* Set the bottom position with margin */
+            display: block;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .home-button {
+            position: fixed;
+            top: 20px;
+            left: 20px; /* Add left margin to the Home button */
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .video-grid{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .videoEntry{
+            margin: 20px;
+            width: 534px;
+            height: 300px;
+        }
+
+        .videoEntry iframe{
+            width: 100%;
+            height: 100%;
+            margin: 10px;
+        }
+
+        .pageHeading {
+            text-decoration: underline;
+            /* text-align: left; */
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+            font-size: 34px;
+            /* max-width: 70%; */
+            font-weight: bold;
+            /* top: 100%; */
+            /* margin: 20px; */
+        }
+
+        /* .video-grid{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .videoEntry{
+            flex: 1 1 50%;
+            height: 0;
+            max-width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%;
+        }
+
+        .videoEntry iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        } */
+
+        @media only screen and (max-width: 810px) {
+            /* Media query for screens up to 600px wide (typically smartphones) */
+            .job-name {
+                font-size: 24px; /* Decrease font size for smaller screens */
+            }
+
+            .job-org {
+                font-size: 18px; /* Decrease font size for smaller screens */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .video-container iframe {
+                height: 250px; /* Decrease video height for smaller screens */
+            }
+
+            .job-description {
+                font-size: 14px; /* Decrease font size for smaller screens */
+                margin: 10px auto; /* Adjust margin for smaller screens */
+                max-width: 80%; /* Decrease max-width for smaller screens */
+            }
+
+            .repository-button,
+            .home-button {
+                left: 10px; /* Adjust left position for mobile */
+                font-size: 15px; /* Decrease font size for smaller screens */
+                padding: 10px;
+            }
+
+            .repository-button{
+                left: 50%;
+            }
+
+            .repository-button:active,
+            .home-button:active{
+                transform: scale(1.1);
+            }
+
+            .videoEntry{
+                width: 267px;
+                height: 150px;
+                margin: auto;
+                margin-bottom: 20px;
+            }
+
+            .video-grid{
+                display: block;
+            }
+
+            .pageHeading{
+                font-size: 28px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="home-button">Home</a>
+    <div class="pageHeading">
+        <br>
+        Certificates & Courses
+        <br><br>
+    </div>
+    <div class="job-name" id="introGD">CS50's Introduction to Game Development</div>
+    from
+    <div class="job-org">
+        <img src="../Icons/harvardLogo.png" alt="harvard">
+        <!-- <div style="font-weight: bold;">[ In Progress ]<br></div> -->
+        Harvard University
+    </div>
+    <span style="font-size: small;">from Jul 2023 to Dec 2023 <br>Online</span>
+
+    <!-- <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mgN-XsGF-Nw?si=CrHtgI24xClRgpgG?vq=hd1080" frameborder="0" allowfullscreen></iframe>
+    </div> -->
+
+    <div class="job-description">
+        <!-- Add your project description here -->
+        The CS50 Introduction to Game Development course by Harvard University is an enriching journey into the world of game development, offered through their OpenCourseWare.
+        <br><br>
+        <span style="text-decoration: underline; font-size: 17px; font-weight: 600">Course Structure and Content:</span>
+        <br><br>
+        <div style="margin-left: 10px;">
+            The course delves into the development of both 2D and 3D games.
+            <br><br>
+            It covers various genres including platformers, side-scrollers, and 3D flight simulators.
+            <br><br>
+            Tools and languages used include Unity, LÖVE 2D, and Lua, along with an introduction to C# for Unity development.
+        </div>
+        <br>
+        <span style="text-decoration: underline; font-size: 17px; font-weight: 600">Key Projects and Lectures:</span>
+        <br><br>
+        <div style="margin-left: 10px;">
+            <span style="font-weight: 600;">Pong:</span> The course begins with a classic game to introduce basic concepts.
+            <br><br>
+            <span style="font-weight: 600;">Flappy Bird:</span> Teaches animation and simple physics.
+            <br><br>
+            <span style="font-weight: 600;">Match 3:</span> Introduces more complex game mechanics and tweening for smooth animations.
+            <br><br>
+            <span style="font-weight: 600;">Super Mario Bros.:</span> Covers more advanced platformer mechanics.
+            <br><br>
+            <span style="font-weight: 600;">Legend of Zelda:</span> Explores top-down perspective and game design intricacies.
+            <br><br>
+            <span style="font-weight: 600;">Angry Birds:</span> Emphasizes physics-based game design.
+        </div>
+        <br>
+        <span style="text-decoration: underline; font-size: 17px; font-weight: 600">Focus on Learning:</span>
+        <br><br>
+        <div style="margin-left: 10px;">
+            The course is project-based, encouraging hands-on learning through game development projects.
+            <br><br>
+            Each project includes detailed lectures, source code, and implementation tips.
+            <br><br>
+            The course emphasizes understanding core game development concepts over obtaining a certificate.
+        </div>
+        <br>
+        <span style="text-decoration: underline; font-size: 17px; font-weight: 600">Learning Outcomes:</span>
+        <br><br>
+        <div style="margin-left: 10px;">
+            Gain practical experience in game design and development.
+            <br><br>
+            Learn to work with popular game development frameworks and tools.
+            <br><br>
+            Develop an understanding of animation, physics, and user interaction in games.
+        </div>
+        <br>
+    </div>
+    
+    <div class="repoContainer">
+        <a href="https://cs50.harvard.edu/games/2018/" class="repository-button" target="_blank">Course Website</a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="job-name" id="C-sharpfunda">Unity C# Scripting Fundamentals
+    </div>
+        from
+        <div class="job-org">
+            <img src="../Icons/pluralsightLogo.png" alt="Pluralsight">
+            <!-- <div style="font-weight: bold;">[ In Progress ]<br></div> -->
+            Pluralsight
+        </div>
+        <span style="font-size: small;">completed on Oct 2020 <br>Online</span>
+
+    <!-- <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mgN-XsGF-Nw?si=CrHtgI24xClRgpgG?vq=hd1080" frameborder="0" allowfullscreen></iframe>
+    </div> -->
+
+    <div class="job-description">
+        <!-- Add your project description here -->
+        <span style="text-decoration: underline; font-size: 17px; font-weight: 600">Introduction to C# in Unity:</span>
+        <br><br>
+        <div style="margin-left: 10px;">
+            Understanding the core workflow for creating and executing scripts in the Unity Editor.
+            <br><br>
+            Creating and manipulating variables.
+            <br><br>
+            Learning about different types of operators (assignment, arithmetic, logical, and comparison).
+            <br><br>
+            Developing logic using conditional statements, loops, and basic arrays.
+        </div>
+        <br>
+        <span style="text-decoration: underline; font-size: 17px; font-weight: 600">Project-Based Learning:</span>
+        <br><br>
+        <div style="margin-left: 10px;">
+            Applying learned concepts to create a simple physics-based rolling ball game.
+            <br><br>
+            Implementing the project step-by-step, including:
+            <br><br>
+            <div style="margin-left: 20px;">
+                Setting up the camera.
+                <br><br>
+                Creating a coin collection system.
+                <br><br>
+                Designing a GUI for coin counting.
+                <br><br>
+                Creating a killbox and setting up the finish line.
+            </div>
+        </div>
+        <br>
+        <span style="text-decoration: underline; font-size: 17px; font-weight: 600">Course Objectives:</span>
+        <br><br>
+        <div style="margin-left: 10px;">
+            Equip learners with the knowledge to script effectively in C# within the Unity environment.
+            <br><br>
+            Provide hands-on experience through mini-projects to reinforce the concepts.
+            <br><br>
+            Develop a fundamental understanding of scripting that can be applied to more complex Unity projects.
+        </div>
+        <br>
+        <span style="text-decoration: underline; font-size: 17px; font-weight: 600">Skills Developed:</span>
+        <br><br>
+        <div style="margin-left: 10px;">
+            Basic scripting in C# tailored for Unity.
+            <br><br>
+            Practical experience with Unity's scripting API.
+            <br><br>
+            Foundation for more advanced Unity development and game design.
+        </div>
+        <br>
+    </div>
+    
+    <div class="repoContainer">
+        <a href="https://drive.google.com/file/d/1DxItwWjOkf1uUZs-oJ1-MY0DOqlwPbKk/view" class="repository-button" target="_blank">Certificate</a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="job-name" id="animFunda">Unity Animation Fundamentals
+    </div>
+        from
+        <div class="job-org">
+            <img src="../Icons/pluralsightLogo.png" alt="Pluralsight">
+            <!-- <div style="font-weight: bold;">[ In Progress ]<br></div> -->
+            Pluralsight
+        </div>
+        <span style="font-size: small;">completed on Oct 2020<br>Online</span>
+
+    <!-- <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mgN-XsGF-Nw?si=CrHtgI24xClRgpgG?vq=hd1080" frameborder="0" allowfullscreen></iframe>
+    </div> -->
+
+    <div class="job-description">
+        <span style="text-decoration: underline; font-size: 17px; font-weight: 600">Course Overview:</span>
+        <br><br>
+        <div style="margin-left: 10px;">
+            <span style="font-weight: 600;">Animation Basics:</span>
+            <br><br>
+            <div style="margin-left: 20px;">
+                Introduction to the basics of animation within Unity.
+                <br><br>
+                Understanding key concepts like keyframes, timelines, and interpolation.
+                <br><br>
+                Learning how to create simple animations and adjust their properties.
+            </div>
+            <br>
+            <span style="font-weight: 600;">Mecanim Animation System:</span>
+            <br><br>
+            <div style="margin-left: 20px;">
+                In-depth coverage of Unity's Mecanim animation system.
+                <br><br>
+                Creating and managing animation states and state machines.
+                <br><br>
+                Utilizing animation layers for more complex animation behaviors.
+            </div>
+            <br>
+            <span style="font-weight: 600;">Blend Trees:</span>
+            <br><br>
+            <div style="margin-left: 20px;">
+                Learning how to use blend trees to combine multiple animations seamlessly.
+                <br><br>
+                Practical examples of setting up blend trees for character movements.
+            </div>
+            <br>
+            <span style="font-weight: 600;">Animation Controllers:</span>
+            <br><br>
+            <div style="margin-left: 20px;">
+                Building animation controllers to manage the flow and blending of animations.
+                <br><br>
+                Setting up transitions and conditions for smooth animation switching.
+            </div>
+            <br>
+            <span style="font-weight: 600;">Scripting for Animation:</span>
+            <br><br>
+            <div style="margin-left: 20px;">
+                Using C# scripting to control animations programmatically.
+                <br><br>
+                Writing scripts to trigger animations based on game events.
+                <br><br>
+                Implementing dynamic and responsive animations in gameplay.
+            </div>
+        </div>
+        <br>
+        <span style="text-decoration: underline; font-size: 17px; font-weight: 600">Skills Acquired:</span>
+        <br><br>
+        <div style="margin-left: 10px;">
+            Proficiency in using Unity's animation tools.
+            <br><br>
+            Ability to create and manage complex animation systems.
+            <br><br>
+            Understanding of both the technical and artistic aspects of animation in Unity.
+            <br><br>
+            Capability to script animations and integrate them into interactive projects.
+        </div>
+        <br>
+    </div>
+    
+    <div class="repoContainer">
+        <a href="https://drive.google.com/file/d/1-Q4xFCuNxa9_R5dkb_GUdSOQx6fM9yqx/view?usp=sharing" class="repository-button" target="_blank">Certificate</a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="job-name" id="unity2018Funda">Unity 2018 Fundamentals
+    </div>
+        from
+        <div class="job-org">
+            <img src="../Icons/pluralsightLogo.png" alt="Pluralsight">
+            <!-- <div style="font-weight: bold;">[ In Progress ]<br></div> -->
+            Pluralsight
+        </div>
+        <span style="font-size: small;">completed on Apr 2020<br>Online</span>
+
+    <!-- <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mgN-XsGF-Nw?si=CrHtgI24xClRgpgG?vq=hd1080" frameborder="0" allowfullscreen></iframe>
+    </div> -->
+
+    <div class="job-description">
+        <span style="text-decoration: underline; font-size: 17px; font-weight: 600">Course Overview:</span>
+        <br><br>
+        <div style="margin-left: 10px;">
+            <span style="font-weight: 600;">Objective:</span> The course is designed to help learners understand the basics of Unity 2018, focusing on foundational skills necessary for game development.
+        </div>
+        <br>
+        <span style="text-decoration: underline; font-size: 17px; font-weight: 600">Content Structure:</span>
+        <br><br>
+        <div style="margin-left: 10px;">
+                <span style="font-weight: 600;">Course Introduction:</span> Overview of what the course will cover.
+                <br><br>
+                <span style="font-weight: 600;">Setting Up Unity:</span> Instructions on installing and setting up the Unity environment.
+                <br><br>
+                <span style="font-weight: 600;">Basic Concepts:</span> Introduction to key Unity concepts such as the interface, game objects, components, and prefabs.
+                <br><br>
+                <span style="font-weight: 600;">Scripting in C#:</span> Basics of writing scripts in C# for Unity, covering essential programming concepts.
+                <br><br>
+                <span style="font-weight: 600;">Building a Simple Game:</span> Practical exercises to apply learned concepts by building a simple game.
+                <br><br>
+                <span style="font-weight: 600;">Debugging and Optimization:</span> Techniques for debugging and optimizing your Unity projects.
+                <br><br>
+                <span style="font-weight: 600;">Project Completion:</span> Final touches to complete the project and prepare it for deployment.
+        </div>
+        <br>
+        <span style="text-decoration: underline; font-size: 17px; font-weight: 600">Key Learning Outcomes</span>
+        <br><br>
+        <div style="margin-left: 10px;">
+            <span style="font-weight: 600;">Unity Interface:</span> Gain familiarity with the Unity Editor and its various panels and tools.
+            <br><br>
+            <span style="font-weight: 600;">Game Objects and Components:</span> Understand the use of game objects and how to add and configure components to bring them to life.
+            <br><br>
+            <span style="font-weight: 600;">Scripting Fundamentals:</span> Learn to write and attach C# scripts to game objects, manage input, and control game behaviors.
+            <br><br>
+            <span style="font-weight: 600;">Building and Deploying:</span> Learn the basics of building and deploying games to different platforms.
+            <br><br>
+            <span style="font-weight: 600;">Problem-Solving:</span> Develop problem-solving skills specific to game development, including debugging and performance optimization.
+        </div>
+        <br>
+    </div>
+    
+    <div class="repoContainer">
+        <a href="https://drive.google.com/file/d/152hBghGdI1w-u9FPNDV6oieIp-35dc6z/view?usp=sharing" class="repository-button" target="_blank">Certificate</a>
+    </div>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
