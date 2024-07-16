@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Practices of Implementing Agile Procedures & DevOps Methodologies in the development of Web Applications</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="../Favicons/agileLogo.ico" type="image/x-icon">
+
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: 'Roboto', Arial, sans-serif;
+            text-align: center;
+        }
+
+        .job-name {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10%;
+            margin-right: 10%;
+            font-size: 32px;
+            margin-bottom: 15px;
+            margin-top: 15px;
+            /* max-width: 70%; */
+            font-weight: bold;
+            /* margin-top: 20px; */
+        }
+
+        .job-org {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .job-org img{
+            margin-right: 10px;
+            width: 40px;
+            height: 40px;
+        }
+
+        .video-container {
+            margin-top: 20px;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+        }
+
+        .job-description {
+            font-size: 16px;
+            text-align: justify; /* Center-align the project description */
+            margin: 20px auto; /* Center the description box and decrease its width */
+            max-width: 60%;
+
+        }
+
+        .home-button:hover {
+            transform: scale(1.1);
+        }
+
+        .repository-button:hover{
+            /* left: 44.5%; */
+            transform: scale(1.1);
+        }
+
+        .repoContainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .repository-button {
+            position: fixed;
+            bottom: 20px; /* Set the bottom position with margin */
+            display: block;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            transition: transform 0.3s;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+        }
+
+        .home-button {
+            position: fixed;
+            top: 20px;
+            left: 20px; /* Add left margin to the Home button */
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .video-grid{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .videoEntry{
+            margin: 20px;
+            width: 534px;
+            height: 300px;
+        }
+
+        .videoEntry iframe{
+            width: 100%;
+            height: 100%;
+            margin: 10px;
+        }
+
+        .pageHeading {
+            text-decoration: underline;
+            /* text-align: left; */
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+            font-size: 34px;
+            /* max-width: 70%; */
+            font-weight: bold;
+            /* top: 100%; */
+            /* margin: 20px; */
+        }
+
+        /* .video-grid{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .videoEntry{
+            flex: 1 1 50%;
+            height: 0;
+            max-width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%;
+        }
+
+        .videoEntry iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        } */
+
+        @media only screen and (max-width: 810px) {
+            /* Media query for screens up to 600px wide (typically smartphones) */
+            .job-name {
+                font-size: 24px; /* Decrease font size for smaller screens */
+            }
+
+            .job-org {
+                font-size: 18px; /* Decrease font size for smaller screens */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .video-container iframe {
+                height: 250px; /* Decrease video height for smaller screens */
+            }
+
+            .job-description {
+                font-size: 14px; /* Decrease font size for smaller screens */
+                margin: 10px auto; /* Adjust margin for smaller screens */
+                max-width: 80%; /* Decrease max-width for smaller screens */
+            }
+
+            .repository-button,
+            .home-button {
+                left: 10px; /* Adjust left position for mobile */
+                font-size: 15px; /* Decrease font size for smaller screens */
+                padding: 10px;
+            }
+
+            .repository-button{
+                left: 50%;
+            }
+
+            .repository-button:active,
+            .home-button:active{
+                transform: scale(1.1);
+            }
+
+            .videoEntry{
+                width: 267px;
+                height: 150px;
+                margin: auto;
+                margin-bottom: 20px;
+            }
+
+            .video-grid{
+                display: block;
+            }
+
+            .pageHeading{
+                font-size: 28px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <a href="../index.html#papers" class="home-button">Home</a>
+    <div class="job-name" id="introGD">Practices of Implementing Agile Procedures & DevOps Methodologies in the development of Web Applications
+    </div>
+    <span style="font-size: medium;">Co-Authored with <a style="color: blue;" href="https://www.linkedin.com/in/lakshita-sejwal-a5a92b55/" target="_blank">Lakshita Sejwal</a></span> <br><br>
+    published in
+    <div class="job-org">
+        <img src="../Icons/AKGEClogo.png" alt="akgec">
+        <!-- <div style="font-weight: bold;">[ In Progress ]<br></div> -->
+        Glimpse - Journal of Computer Science
+    </div>
+    <span style="font-size: small;">Oct 2022</span>
+    <br><br><br>
+
+    <!-- <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mgN-XsGF-Nw?si=CrHtgI24xClRgpgG?vq=hd1080" frameborder="0" allowfullscreen></iframe>
+    </div> -->
+
+    <div class="job-description">
+        <!-- Add your project description here -->
+        <span style="text-decoration: underline; font-weight: 600;">Abstract</span> <br> <br>
+        Agile and DevOps are the methodologies that will motivate IT firms to achieve industry goals in the most efficient way possible. Agile is a biological process that allows conceited groups to successfully place work and distribute a paradigm that will increase the visibility of software system development. DevOps has a psychological feature ability in IT projects where quick product development is a high objective. It's a set of concepts that connect numerous activities with the goal of allowing the Development and Operations teams to interact and work more efficiently. Agile and DevOps are popular in the IT business these days as a result of these profitable aspects. From historical commercial software systems to web-based apps, project development using agile and DevOps may cover any genre of a software system. A lot of the practical elements of agile methodologies and DevOps techniques are a unit familiar with e-commerce apps through the means of this paper.
+        <br><br><br>
+        <span style="font-weight: 600; text-decoration: underline;">Published Paper PDF</span> <br><br>
+        <object class="pdf" 
+            data="https://www.akgec.ac.in/wp-content/uploads/2024/01/Jan-Jun2022_8.pdf"
+            width= "100%"
+            height="600">
+        </object>
+        <br><br><br>
+        <div style="font-style: italic; font-weight: lighter;"> 
+            AKGEC's Glimpse - Journal of Computer Science: <a style="color: blue;" href="https://www.akgec.ac.in/cse-journal-gjcs/" target="_blank">https://www.akgec.ac.in/cse-journal-gjcs/</a>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div class="repoContainer">
+        <a href="https://www.akgec.ac.in/cse-journal-gjcs/#archives" class="repository-button" target="_blank">Glimpse Journal Link</a>
+    </div>
+    
+</body>
+</html>
