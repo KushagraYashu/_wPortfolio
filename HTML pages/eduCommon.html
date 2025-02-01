@@ -10,6 +10,10 @@
     <link rel="icon" href="../Favicons/eduLogo.ico" type="image/x-icon">
 
     <style>
+        span.disable-links {
+            pointer-events: none;
+        }
+
         body {
             background-color: white;
             color: black;
@@ -78,6 +82,42 @@
 
         }
 
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+            grid-template-rows: repeat(auto-fit, minmax(70px, 1fr));
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .project {
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .project img,
+        .project iframe {
+            width: 100%;
+            max-width: 450px;
+            border: 2px solid black;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .project-description {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .project:hover{
+            transform: scale(1.1); /* Add a scale effect on hover */
+            display: block; /* Show the video container on hover */
+        }
+
+        .project-title {
+            font-weight: bold;
+        }
+
         .home-button:hover {
             transform: scale(1.1);
         }
@@ -139,6 +179,10 @@
             margin: 10px;
         }
 
+        a{
+            color: inherit;
+        }
+
         /* .video-grid{
             display: flex;
             flex-wrap: wrap;
@@ -168,6 +212,10 @@
 
         @media only screen and (max-width: 810px) {
             /* Media query for screens up to 600px wide (typically smartphones) */
+            span.disable-links {
+                pointer-events: none;
+            }
+
             .job-name {
                 font-size: 24px; /* Decrease font size for smaller screens */
             }
@@ -230,6 +278,97 @@
         Educational Degrees
         <br><br>
     </div>
+
+    <div class="job-name" id="msc">Postgraduate Degree: <br> Master of Science (MSc) in Computer Games Technology</div>
+    from
+    <div class="job-org">
+        <img src="../Icons/abertayLogo.png" alt="abertay">
+        Abertay University
+    </div>
+    <span style="font-size: small;">from Sep 2024 to Aug 2025 <br> Dundee, UK</span>
+    <div class="job-description">
+        <span style="text-decoration: underline; font-size: 17px; font-weight: 600">Academic Performance:</span>
+        <br><br>
+        <div style="margin-left: 10px;">
+            Achieved B+ Grade (3.5/4.5) - Term 1.
+        </div>
+        <br>
+        <span style="text-decoration: underline; font-size: 17px; font-weight: 600">Coursework:</span>
+        <br><br>
+        <div style="margin-left: 10px;">
+            Studied a range of subjects (Term 1), including:
+            <br><br>
+            <div style="margin-left: 20px;">
+                Graphics Programming
+                <br><br>
+                Advanced 3D Game Mathematics
+                <br><br>
+                Artificial Intelligence for Games
+                <br><br>
+                Networking for Games
+                <!-- <br><br>
+                add more
+                <br><br>
+                 -->
+            </div>
+        </div>
+        <br>
+        <span style="text-decoration: underline; font-size: 17px; font-weight: 600">Skill Development:</span>
+        <br><br>
+        <div style="margin-left: 10px;">
+            Enhanced game development skills and learnt more about the internal working of a game.
+            <br><br>
+            Developed several projects to understand the modules and participated in various events and jams.
+        </div>
+        <br><br>
+        <span style="text-decoration: underline; font-size: 17px; font-weight: 600">Projects Created during the program (Term 1).</span>
+        <br><br>
+        <div class="project-grid">
+            <div class="project">
+                <a href="../HTML pages/directx11.html">
+                    <img src="../Pics/LivingLandscapedirectx11.png" alt="directx11" class="project-img">
+                    <div class="project-title"><br>Living Landscape: A Dynamic Terrain Simulation using DirectX11</div>
+                </a>
+                <div class="project-description">A dynamically tessellated terrain with height-mapped geometry, multiple lights, accurate shadows, a day-night cycle, and advanced real-time rendering. Powered by DirectX11 and C++, created for the Graphics module.</div>
+            </div>
+
+            <div class="project">
+                <a href="../HTML pages/mscCourseworkProjectsCombined.html#stig">
+                    <img src="../Pics/stig.png" alt="FSMvsFuzzy" class="project-img">
+                    <div class="project-title"><br>STIG: FSM Vs Fuzzy Logic</div>
+                </a>
+                <div class="project-description">An AI application where 2 techniques, FSM and Fuzzy Logic, are compared for the task of obstacle avoidance on a race track. Powered by Unity Engine and C#, created for the AI module.</div>
+            </div>
+
+            <div class="project">
+                <a href="../HTML pages/mscCourseworkProjectsCombined.html#packetPew">
+                    <img src="../Pics/packetPew.png" alt="packetPew" class="project-img">
+                    <div class="project-title"><br>PacketPew: A 2D Networked Shooter</div>
+                </a>
+                <div class="project-description">A 2D multiplayer shooter with implementation for techniques such as prediction and interpolation in order to handle poor network conditions. Powered by SFML, created for the Networking module.</div>
+            </div>
+        </div>
+        <br>
+        <!-- add if you have written something
+        <span style="text-decoration: underline; font-size: 17px; font-weight: 600">Writing and Publications:</span>
+        <br><br>
+        <div style="margin-left: 10px;">
+            Wrote for the college's science journal and technology magazine.
+            <br><br>
+            Published a research paper in the International Journal for Multidisciplinary Research (IJFMR).
+        </div>
+        <br> -->
+    </div>
+    <!-- remove this disable link span when the transcript is ready -->
+    <span class = "disable-links">
+        <div class="repoContainer">
+            <a href="https://drive.google.com/file/d/1kKUjLtj-yeQaJagdPfpU-RzGLeXnjFUo/view" class="repository-button" target="_blank">Transcript available only after the course completion</a>
+        </div>
+    </span>
+    <br>
+    <br>
+    <br>
+
     <div class="job-name" id="btech">Undergraduate Degree: <br> Bachelor of Technology (B.Tech) in Computer Science And Engineering (Artificial Intelligence & Machine Learning)</div>
     from
     <div class="job-org">
@@ -276,7 +415,7 @@
         <div style="margin-left: 10px;">
             Enhanced game development skills and actively participated in game jams.
             <br><br>
-            Developed several projects to further knowledge and skills.
+            Developed several projects to further enhance knowledge and skills.
         </div>
         <br>
         <span style="text-decoration: underline; font-size: 17px; font-weight: 600">Writing and Publications:</span>
@@ -288,7 +427,6 @@
         </div>
         <br>
     </div>
-    
     <div class="repoContainer">
         <a href="https://drive.google.com/file/d/1kKUjLtj-yeQaJagdPfpU-RzGLeXnjFUo/view" class="repository-button" target="_blank">Transcript</a>
     </div>
