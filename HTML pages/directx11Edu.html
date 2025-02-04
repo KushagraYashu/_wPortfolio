@@ -2,11 +2,11 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AGDS Freshers Jam</title>
+    <title>Living Landscape: Dynamic Terrain using DirectX11</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="icon" href="../Favicons/agdsLogo.ico" type="image/x-icon">
+    <link rel="icon" href="../Favicons/directx11.ico" type="image/x-icon">
 
     <style>
         body {
@@ -41,10 +41,6 @@
             transform: scale(1.1);
         }
 
-        .itch-button:hover{
-            transform: scale(1.1);
-        }
-
         .project-description {
             font-size: 16px;
             text-align: center; /* Center-align the project description */
@@ -56,27 +52,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-
-        .itchContainer{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .itch-button {
-            left: 47.2%;
-            position: fixed;
-            bottom: 80px; /* Set the bottom position with margin */
-            display: block;
-            background-color: black;
-            color: white;
-            padding: 10px 20px;
-            font-weight: bold;
-            text-decoration: none;
-            border: none;
-            border-radius: 5px;
-            transition: transform 0.3s;
         }
 
         .repository-button {
@@ -111,6 +86,7 @@
             /* Media query for screens up to 600px wide (typically smartphones) */
             .project-name {
                 font-size: 24px; /* Decrease font size for smaller screens */
+                margin-top: 15%;
             }
 
             .video-container iframe {
@@ -134,11 +110,6 @@
                 left: 50%;
             }
 
-            .itch-button{
-                left: 50%;
-                bottom: 70px;
-            }
-
             .repository-button:active,
             .home-button:active{
                 transform: scale(1.1);
@@ -148,41 +119,35 @@
     </style>
 </head>
 <body>
-    <a href="../index.html#jams" class="home-button">Home</a>
-    <div class="project-name">AGDS Freshers Jam 2024 <br><span style="font-weight: 600; color: rgb(104, 104, 104); text-decoration: underline;">Created Game: Wrong Floor</span></div>
+    <a href="../HTML pages/eduCommon.html#msc" class="home-button">Home</a>
+    <div class="project-name">Living Landscape: A Dynamic Terrain Simulation using DirectX11</div>
     <div class="project-description">
-        A week long jam to create a game on the theme "Finite Space".
+        <!-- <div style="font-weight: bold;">[ In Progress ]<br></div> -->
+        A Real-Time rendering project using DirectX11.
     </div>
 
     <div class="video-container">
         <!-- Replace the src attribute with your YouTube video link -->
-        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/xK4HzFgfU4M?si=797HLRSDI-8jN6x1?vq=hd1080" frameborder="0" allowfullscreen></iframe> -->
-         <p style="font-size:40px;">Video Coming Soon</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xK4HzFgfU4M?si=797HLRSDI-8jN6x1?vq=hd1080" frameborder="0" allowfullscreen></iframe>
     </div>
 
     <div class="project-description">
         <!-- Add your project description here -->
         <div style="font-weight: bold; font-size: 20px;">Key Points</div>
         <br>
-        The game jam was organised online on an <a href="https://itch.io/jam/agds-freshers-jam-2024" target="_blank">itch.io</a> page.
+        It is a simulation showcasing a dynamic terrain influenced by height mapping and tessellation, integrated with a realistic day-night cycle.
         <br><br>
-        Elevator-Based Combat: Engage in high-stakes, stationary combat within a confined elevator, relying on precise shooting to fend off relentless zombie threats.
+        Dynamic Terrain and Tessellation: A height map manipulates a plane mesh that is dynamically tessellated for enhanced detail; Normals are correctly calculated using the height map for accurate lighting.
         <br><br>
-        Jump Scare-Driven Atmosphere: Experience a tension-filled environment with dynamic lighting and sound design that delivers unexpected jump scares throughout the encounter.
+        Post-Processing: Color grading for scene-wide adjustments in brightness, contrast, and saturation; Bloom with multiple passes, applied to both the sun and the scene for a radiant effect.
         <br><br>
-        Immersive Visual Effects: Enhance gameplay with realistic overlays—such as steam and mud effects—implemented using sprites and sprite masks to simulate obstructed camera views.
-        <br><br>
-        Robust Technical Implementation & Collaboration: Developed in Unity with C# scripting, utilizing NavMesh for authentic zombie navigation, and refined through close collaboration with an artist, evolving from a game jam submission to a full release.
+        Additional Visual Features: Moving Clouds, Bitmap Clouds that move based on time; Sky Dome, A Sky Dome sphere rendered without the depth buffer to create the illusion of a distant skybox.
         <br><br>
         <div style="font-style: italic; font-weight: lighter;"> More details on the components and working can be provided upon request.</div>
     </div>
     <br>
-    <div class="itchContainer">
-        <a href="https://kushagra0.itch.io/wrong-floor-bitch" class="itch-button" target="_blank">Itch Page</a>
-    </div>
-    <br>
     <div class="repoContainer">
-        <a href="https://github.com/KushagraYashu/freshers-game-jam" class="repository-button" target="_blank">Repository Link</a>
+        <a href="https://github.com/KushagraYashu/Living-Landscape-DirectX11" class="repository-button" target="_blank">Repository Link</a>
     </div>
     <br>
     <br>

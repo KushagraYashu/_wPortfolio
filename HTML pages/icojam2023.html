@@ -74,6 +74,31 @@
             transition: transform 0.3s;
         }
 
+        .itchContainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .itch-button:hover{
+            transform: scale(1.1);
+        }
+
+        .itch-button {
+            left: 47.2%;
+            position: fixed;
+            bottom: 80px; /* Set the bottom position with margin */
+            display: block;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
         .home-button {
             position: fixed;
             top: 20px;
@@ -119,6 +144,11 @@
                 left: 50%;
             }
 
+            .itch-button{
+                left: 50%;
+                bottom: 70px;
+            }
+
             .repository-button:active,
             .home-button:active{
                 transform: scale(1.1);
@@ -152,13 +182,15 @@
         <br><br>
         The core mechanics of the game involve continuous movement while avoiding enemy bullets, which result in significant damage and loss of life. Additionally, the game features a "shoot" function that can be used to destroy enemies. The combination of these mechanics creates an engaging and challenging gameplay experience.
         <br><br>
-        The game "3 Waves 2 Lives 1 Player" is publicly accessible and can be downloaded from its dedicated <a style="color: blue;" href="https://kushagra0.itch.io/3waves2lives1player" target="_blank">itch.io project page</a>. This platform allows players to experience the game firsthand and provides a space for feedback and community interaction.
-        <br><br>
         <!-- It is a group project led by Kushagra and is the foundation of a <a href="https://doi.org/10.36948/ijfmr.2024.v06i03.21878" style="color: blue;" target="_blank">Research Paper</a>.
         <br><br>
         The project report can be found <a href="https://github.com/KushagraYashu/iPark/blob/main/iPark%20Documents/Report/iPark%20Project%20Report%20%5BHardBind%5D.pdf" style="color: blue;" target="_blank">here</a>.
         <br><br> -->
         <div style="font-style: italic; font-weight: lighter;"> More details on the components and working can be provided upon request.</div>
+    </div>
+    <br>
+    <div class="itchContainer">
+        <a href="https://kushagra0.itch.io/3waves2lives1player" class="itch-button" target="_blank">Itch Page</a>
     </div>
     <br>
     <div class="repoContainer">
